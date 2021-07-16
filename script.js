@@ -23,15 +23,6 @@ const play = (x) =>{
     }
 }
 
-const buttons = document.querySelectorAll('div')
-const buttonArray = [...buttons]
-buttonArray.forEach(button  => {
-    button.addEventListener('click', (e)=>{
-        play(e.target)
-        win()
-    })
-})
-
 const win = () => {
     const buttons = document.querySelectorAll('div')
     const b = [...buttons]
@@ -43,7 +34,7 @@ const win = () => {
        (b[2].innerHTML === 'X' && b[5].innerHTML === 'X' && b[8].innerHTML === 'X') ||
        (b[0].innerHTML === 'X' && b[4].innerHTML === 'X' && b[8].innerHTML === 'X') ||
        (b[6].innerHTML === 'X' && b[4].innerHTML === 'X' && b[2].innerHTML === 'X')){
-           return window.alert('Parabens Player 1 Venceu!!!!')
+           return window.alert('Parabéns Player 1 Venceu!!!!')
     }
 
     if((b[0].innerHTML === 'O' && b[1].innerHTML === 'O' && b[2].innerHTML === 'O') ||
@@ -54,9 +45,18 @@ const win = () => {
        (b[2].innerHTML === 'O' && b[5].innerHTML === 'O' && b[8].innerHTML === 'O') ||
        (b[0].innerHTML === 'O' && b[4].innerHTML === 'O' && b[8].innerHTML === 'O') ||
        (b[6].innerHTML === 'O' && b[4].innerHTML === 'O' && b[2].innerHTML === 'O')){
-           return window.alert('Parabens Player 2 Venceu!!!!')
+           return window.alert('Parabéns Player 2 Venceu!!!!')
     } 
 }
+
+const buttons = document.querySelectorAll('div')
+const buttonArray = [...buttons]
+buttonArray.forEach(button  => {
+    button.addEventListener('click', (e)=>{
+        play(e.target)
+        win()
+    })
+})
 
 const resetButton = document.querySelector('button')
 resetButton.addEventListener('click', () => {
