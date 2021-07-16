@@ -42,7 +42,7 @@ const win = () => {
        (b[1].innerHTML === 'X' && b[4].innerHTML === 'X' && b[7].innerHTML === 'X') ||
        (b[2].innerHTML === 'X' && b[5].innerHTML === 'X' && b[8].innerHTML === 'X') ||
        (b[0].innerHTML === 'X' && b[4].innerHTML === 'X' && b[8].innerHTML === 'X') ||
-       (b[8].innerHTML === 'X' && b[4].innerHTML === 'X' && b[2].innerHTML === 'X')){
+       (b[6].innerHTML === 'X' && b[4].innerHTML === 'X' && b[2].innerHTML === 'X')){
            return window.alert('Parabens Player 1 Venceu!!!!')
     }
 
@@ -53,7 +53,7 @@ const win = () => {
        (b[1].innerHTML === 'O' && b[4].innerHTML === 'O' && b[7].innerHTML === 'O') ||
        (b[2].innerHTML === 'O' && b[5].innerHTML === 'O' && b[8].innerHTML === 'O') ||
        (b[0].innerHTML === 'O' && b[4].innerHTML === 'O' && b[8].innerHTML === 'O') ||
-       (b[8].innerHTML === 'O' && b[4].innerHTML === 'O' && b[2].innerHTML === 'O')){
+       (b[6].innerHTML === 'O' && b[4].innerHTML === 'O' && b[2].innerHTML === 'O')){
            return window.alert('Parabens Player 2 Venceu!!!!')
     } 
 }
